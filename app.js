@@ -20,11 +20,11 @@
     oneshot: {
       limit: 'days', max: 1, // 1日（その日は何度でも・翌日からロック）
       inviteLead:
-        '今のあなたに合う整え方を、一緒に見つけませんか？🤍<br />この診断を引き続き使える、特別なご案内があります。',
+        '今のあなたに合う整え方を、一緒に見つけませんか？🩶<br />この診断を引き続き使える、特別なご案内があります。',
       ctaLabel: 'ご案内を見る',
       ctaUrl: CFG.CONSULT_URL || '#',
       lockLead:
-        '無料でのお試しは、ここまで🤍<br />今のあなたに合う整え方を、一緒に見つけませんか？<br />この診断を引き続き使える、特別なご案内があります。',
+        '無料でのお試しは、ここまで🩶<br />今のあなたに合う整え方を、一緒に見つけませんか？<br />この診断を引き続き使える、特別なご案内があります。',
     },
     trial30: {
       limit: 'days', max: 30, // フロントエンド（ミニ講座）用・30日
@@ -375,7 +375,7 @@
     const doorLine = `<p class="door-line">${phr('毎日の小さな選択が、未来を作る。今日のあなたが、どんな状態でも大丈夫。')}</p>`;
     const doorInvite =
       mode === 'member' || mode === 'trial30'
-        ? '<p class="door-invite">また明日も、整えにきてくださいね🤍</p>'
+        ? '<p class="door-invite">また明日も、整えにきてくださいね🩶</p>'
         : `<p class="door-invite">${phr(cfg.inviteLead)}</p>
            <a class="btn btn--soft door-cta" href="${cfg.ctaUrl}" target="_blank" rel="noopener">${cfg.ctaLabel}</a>`;
     const doorHtml = `<div class="result-door"><div class="door-mark">❀</div>${doorLine}${doorInvite}</div>`;
