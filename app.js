@@ -468,5 +468,10 @@
   /* ---------- 初期化 ---------- */
   buildFeelings();
   updateFeelingUI();
+  // 「無料」表記は①無料モードのときだけ（②有料・③無期限では出さない）
+  if (mode !== 'oneshot') {
+    const hn = document.querySelector('.hero-note');
+    if (hn) hn.textContent = '所要 約1分';
+  }
   if (isLocked()) showLocked(); // 1回／14日を使い切っていたら、入口の代わりに案内画面
 })();
