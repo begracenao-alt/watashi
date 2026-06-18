@@ -44,14 +44,7 @@
     } catch (e) {
       /* 別ドメイン埋め込み時はアクセスできないので自分のを使う */
     }
-    const p = new URLSearchParams(search).get('plan');
-    let m = null;
-    if (p === '30' || p === '14' || p === 'trial' || p === '14day') m = 'trial30';
-    else if (p === 'member' || p === 'unlimited') m = 'member';
-    else if (p === 'free' || p === '1' || p === 'oneshot') m = 'oneshot';
-    if (m) { try { localStorage.setItem('bg_plan', m); } catch (e) {} return m; }
-    // ?plan= が無い起動（ホーム画面アイコン等）は、前回開いたモードを思い出す
-    try { const saved = lsGet('bg_plan'); if (saved) return saved; } catch (e) {}
+    // この無料アプリは「無料(1回)」固定。過去のテスト記憶(?plan=member等)に左右されない。
     return 'oneshot';
   }
   const mode = getMode();
