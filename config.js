@@ -4,8 +4,8 @@
  *
  *  ボタンの飛び先は、あなたのサイト（WordPress）の固定ページに向けてあります。
  *  ↓ この2ページを WordPress で作れば、ボタンが自動でそこに繋がります。
- *    ・begracenao.com/guide/   … 個別相談・セミナーのご案内（①の飛び先）
- *    ・begracenao.com/member/  … 会員のご案内（②の飛び先）
+ *    ・begracenao.com/todayme/ … 私診断1日の出口ページ（①の飛び先）
+ *    ・begracenao.com/member/  … 会員のご案内（②の飛び先・この無料版では未使用）
  *
  *  ★ ここがポイント ★
  *  この2ページの"中身"は、いつでも WordPress の管理画面で編集できます。
@@ -14,8 +14,8 @@
  * ============================================================ */
 
 const CONFIG = {
-  // ① 1日モードの後 →「ご案内を見る」の飛び先（個別相談・セミナーのご案内ページ）
-  CONSULT_URL: 'https://begracenao.com/guide/',
+  // ① 1日モードの後 →「ご案内を見る」の飛び先（私診断1日の出口ページ /todayme/）
+  CONSULT_URL: 'https://begracenao.com/todayme/',
 
   // ② 14日モードの後 →「次のご案内を見る」の飛び先（会員のご案内ページ）
   MEMBER_URL: 'https://begracenao.com/member/',
